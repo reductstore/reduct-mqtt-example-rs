@@ -1,0 +1,10 @@
+[package]
+name = "reduct-mqtt-example-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+reduct-rs = "1.10"
+rumqttc="0.24"
+tokio = { version = "1", features = ["rt-multi-thread"] }
+futures-util = "0.3"

@@ -1,0 +1,13 @@
+version: "3"
+services:
+  reduct-storage:
+    image: reduct/store:latest
+    volumes:
+      - ./data:/data
+    ports:
+      - "8383:8383"
+
+  mqtt-broker:
+    image: eclipse-mosquitto:1.6
+    ports:
+      - "1883:1883"
